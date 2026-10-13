@@ -107,6 +107,22 @@ export default function Footer() {
         </div>
       </div>
 
+
+<div className="flex flex-wrap items-center justify-center gap-2 text-center text-xs text-slate-400">
+  <span>Designed & Developed by</span>
+
+  <a
+    href="mailto:aldrinewrldsolutions@gmail.com?subject=WRLD%20SOLUTIONS%20Enquiry"
+    className="font-bold tracking-wide text-[#D9B77F] transition-colors hover:text-white"
+  >
+    WRLD SOLUTIONS
+  </a>
+
+  <span className="text-slate-500">|</span>
+
+  <span>Technology Partner</span>
+</div>
+
       {/* LOCATION BAR */}
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-8 md:flex-row md:items-center md:justify-between lg:px-10">
@@ -138,6 +154,8 @@ export default function Footer() {
         </div>
       </div>
 
+      
+
       {/* COPYRIGHT */}
       <div className="border-t border-white/10 bg-[#0B192A]">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-6 text-xs text-slate-400 md:flex-row md:items-center md:justify-between lg:px-10">
@@ -149,6 +167,9 @@ export default function Footer() {
           <p>People. Performance. Progress.</p>
         </div>
       </div>
+
+      
+
     </footer>
   );
 }

@@ -2,6 +2,8 @@ import Hero from "@/components/Hero";
 
 import Link from "next/link";
 
+import TechnologyPartner from "@/components/TechnologyPartner";
+
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 
@@ -111,6 +113,9 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+
+<TechnologyPartner />
+
     </main>
   );
 }
