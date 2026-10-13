@@ -1,7 +1,11 @@
 import Hero from "@/components/Hero";
 
+import Link from "next/link";
+
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
+
+
 
 const services = [
   {
@@ -63,6 +67,13 @@ export default function HomePage() {
             opportunities ahead.
           </p>
         </div>
+
+<Link
+  href="/careers"
+  className="mt-8 inline-flex items-center rounded-md bg-[#10243A] px-7 py-4 text-sm font-bold text-white transition-colors hover:bg-[#25445F]"
+>
+  Explore Careers →
+</Link>
       </section>
 
       
