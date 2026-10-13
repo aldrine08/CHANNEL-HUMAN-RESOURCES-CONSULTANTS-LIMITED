@@ -6,10 +6,11 @@ import {
   BriefcaseBusiness,
 } from "lucide-react";
 
+
 const quickLinks = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/#about" },
-  { name: "Our Services", href: "/#services" },
+  { name: "About Us", href: "/about" },
+  { name: "Our Services", href: "/services" },
   { name: "Careers", href: "/#careers" },
   { name: "Contact Us", href: "/#contact" },
 ];

@@ -9,50 +9,8 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-const services = [
-  {
-    number: "01",
-    title: "Recruitment & Selection",
-    description:
-      "Supporting organizations with structured talent sourcing, assessment and selection processes.",
-    icon: UsersRound,
-  },
-  {
-    number: "02",
-    title: "HR Consulting",
-    description:
-      "Providing practical HR guidance to improve people management and organizational effectiveness.",
-    icon: BriefcaseBusiness,
-  },
-  {
-    number: "03",
-    title: "HR Outsourcing",
-    description:
-      "Helping businesses manage selected HR functions through flexible professional support.",
-    icon: Building2,
-  },
-  {
-    number: "04",
-    title: "Career Coaching & Mentorship",
-    description:
-      "Guiding individuals through career planning, professional development and workplace readiness.",
-    icon: GraduationCap,
-  },
-  {
-    number: "05",
-    title: "Payroll & Accounting Support",
-    description:
-      "Supporting payroll administration and related business processes with organized, dependable services.",
-    icon: Calculator,
-  },
-  {
-    number: "06",
-    title: "HR Audits & Policies",
-    description:
-      "Reviewing HR practices and supporting the development of clear, effective workplace policies.",
-    icon: ClipboardCheck,
-  },
-];
+import { services } from "@/data/services";
+
 
 export default function ServicesSection() {
   return (

@@ -7,10 +7,11 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
+
 const navigation = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
-  { label: "Services", href: "/#services" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
   { label: "Careers", href: "/#careers" },
   { label: "Contact", href: "/#contact" },
 ];
@@ -55,8 +56,7 @@ export default function Navbar() {
           className="hidden items-center gap-7 lg:flex"
         >
           {navigation.map((item) => {
-            const active =
-              item.href === "/" && pathname === "/";
+            const active = pathname === item.href;
 
             return (
               <Link
