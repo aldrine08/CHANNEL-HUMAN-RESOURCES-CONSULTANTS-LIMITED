@@ -179,25 +179,41 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CONTACT PREVIEW */}
-      <section id="contact" className="scroll-mt-12 bg-[#10243A] px-6 py-20 text-white lg:px-10">
-        <div className="mx-auto max-w-7xl">
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#D9B77F]">
-            Contact Channel
-          </p>
-          <h2 className="text-3xl font-bold sm:text-4xl">
-            Let's Discuss Your People Priorities.
-          </h2>
-          <p className="mt-5 max-w-2xl leading-8 text-slate-200">
-            Discover practical HR solutions aligned with your
-            organization's goals. Visit our office at
-            KMA Building, Upper Hill, Nairobi, First Floor.
-          </p>
-          <p className="mt-8 text-sm text-slate-300">
-            People. Performance. Progress.
-          </p>
-        </div>
-      </section>
+      
+{/* CONTACT PREVIEW */}
+<section
+  id="contact"
+  className="scroll-mt-12 bg-[#F5F7FA] px-6 py-24 lg:px-10"
+>
+  <div className="mx-auto max-w-7xl">
+    <div className="max-w-3xl">
+
+      <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#9B793E]">
+        Let's Connect
+      </p>
+
+      <h2 className="text-3xl font-bold leading-tight text-[#10243A] sm:text-4xl lg:text-5xl">
+        Let's Build Stronger
+        Organizations Together.
+      </h2>
+
+      <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600">
+        Whether you need recruitment support,
+        human resource consulting, workforce
+        outsourcing or professional career
+        guidance, Channel is ready to discuss
+        practical solutions tailored to your needs.
+      </p>
+
+      <div className="mt-9 flex flex-wrap gap-4">
+        <span className="inline-flex items-center rounded-md bg-[#10243A] px-7 py-4 text-sm font-semibold text-white">
+          Enquiry Form Coming Soon
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
     </main>
   );
 }
