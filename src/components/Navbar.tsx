@@ -5,6 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 const navigation = [
   { label: "Home", href: "/" },
@@ -21,19 +22,32 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-5 px-6 lg:px-10">
-        {/* COMPANY IDENTITY */}
-        <Link
-          href="/"
-          className="flex min-w-0 flex-col"
-          onClick={() => setMenuOpen(false)}
-        >
-          <span className="text-xl font-black tracking-[0.16em] text-[#10243A] sm:text-2xl">
-            CHANNEL
-          </span>
-          <span className="text-[8px] font-semibold uppercase tracking-[0.08em] text-slate-500 sm:text-[10px]">
-            Human Resources Consultants Limited
-          </span>
-        </Link>
+        
+{/* COMPANY IDENTITY */}
+<Link
+  href="/"
+  className="flex min-w-0 items-center gap-3"
+  onClick={() => setMenuOpen(false)}
+>
+  <Image
+    src="/images/channel-emblem.png"
+    alt="Channel Human Resources Consultants emblem"
+    width={62}
+    height={54}
+    className="h-auto w-[52px] shrink-0 object-contain sm:w-[62px]"
+    priority
+  />
+
+  <div className="flex min-w-0 flex-col">
+    <span className="text-xl font-black tracking-[0.12em] text-[#10243A] sm:text-2xl">
+      CHANNEL
+    </span>
+
+    <span className="max-w-[170px] text-[8px] font-semibold uppercase leading-tight tracking-[0.05em] text-slate-500 sm:max-w-none sm:text-[9px]">
+      Human Resources Consultants Limited
+    </span>
+  </div>
+</Link>
 
         {/* DESKTOP NAVIGATION */}
         <nav
