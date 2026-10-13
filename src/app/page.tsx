@@ -2,6 +2,8 @@ import Hero from "@/components/Hero";
 
 import Link from "next/link";
 
+import type { Metadata } from "next";
+
 import TechnologyPartner from "@/components/TechnologyPartner";
 
 import AboutSection from "@/components/AboutSection";
@@ -43,6 +45,15 @@ const navigation = [
   { label: "Careers", href: "#careers" },
   { label: "Contact", href: "#contact" },
 ];
+
+
+export const metadata: Metadata = {
+  title:
+    "HR Consulting, Recruitment & Career Development",
+
+  description:
+    "Channel Human Resources Consultants Limited provides recruitment, HR consulting, outsourcing, payroll support and career development services in Kenya.",
+};
 
 export default function HomePage() {
   return (
