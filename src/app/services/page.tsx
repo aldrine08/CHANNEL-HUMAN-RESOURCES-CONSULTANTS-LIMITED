@@ -97,13 +97,14 @@ export default function ServicesPage() {
                     ))}
                   </ul>
 
-                  <Link
-                    href="/#contact"
-                    className="mt-9 inline-flex w-fit items-center gap-2 border-t border-slate-100 pt-5 text-sm font-bold text-[#9B793E] hover:text-[#10243A]"
-                  >
-                    Enquire About This Service
-                    <ArrowUpRight size={17} />
-                  </Link>
+                  
+<Link
+  href={`/services/${service.slug}`}
+  className="mt-9 inline-flex w-fit items-center gap-2 border-t border-slate-100 pt-5 text-sm font-bold text-[#9B793E] transition-colors hover:text-[#10243A]"
+>
+  Explore This Service
+  <ArrowUpRight size={17} />
+</Link>
                 </article>
               );
             })}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 import {
   UsersRound,
@@ -10,6 +11,7 @@ import {
 } from "lucide-react";
 
 import { services } from "@/data/services";
+
 
 
 export default function ServicesSection() {
@@ -77,10 +79,14 @@ export default function ServicesSection() {
                   {service.description}
                 </p>
 
-                <div className="mt-8 flex items-center gap-2 border-t border-slate-100 pt-5 text-sm font-semibold text-[#9B793E]">
-                  <span>Professional HR Solutions</span>
-                  <ArrowUpRight size={17} />
-                </div>
+                
+<Link
+  href={`/services/${service.slug}`}
+  className="mt-8 flex items-center gap-2 border-t border-slate-100 pt-5 text-sm font-semibold text-[#9B793E] transition-colors hover:text-[#10243A]"
+>
+  <span>Learn More</span>
+  <ArrowUpRight size={17} />
+</Link>
               </article>
             );
           })}

@@ -55,22 +55,28 @@ export default function Navbar() {
           aria-label="Main navigation"
           className="hidden items-center gap-7 lg:flex"
         >
-          {navigation.map((item) => {
-            const active = pathname === item.href;
+          
+{navigation.map((item) => {
+  const active =
+    item.href === "/services"
+      ? pathname === "/services" ||
+        pathname.startsWith("/services/")
+      : pathname === item.href;
 
-            return (
-              <Link
-                key={item.label}
-                href={item.href}
-                aria-current={active ? "page" : undefined}
-                className={`text-sm font-semibold transition-colors hover:text-[#9B793E] ${
-                  active
-                    ? "text-[#9B793E]"
-                    : "text-[#10243A]"
-                }`}
-              >
-                {item.label}
-              </Link>
+  return (
+    <Link
+      key={item.label}
+      href={item.href}
+      onClick={() => setMenuOpen(false)}
+      aria-current={active ? "page" : undefined}
+      className={`text-base font-semibold transition-colors ${
+        active
+          ? "text-[#9B793E]"
+          : "text-[#10243A] hover:text-[#9B793E]"
+      }`}
+    >
+      {item.label}
+    </Link>
             );
           })}
         </nav>
