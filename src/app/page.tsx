@@ -37,62 +37,6 @@ const navigation = [
 export default function HomePage() {
   return (
     <main>
-      {/* NAVIGATION */}
-      <header className="relative z-20 bg-white shadow-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-5 lg:px-10">
-          <a href="#home" className="flex flex-col">
-            <span className="text-2xl font-black tracking-[0.15em] text-[#10243A]">
-              CHANNEL
-            </span>
-            <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-slate-500 sm:text-[10px]">
-              Human Resources Consultants Limited
-            </span>
-          </a>
-
-          {/* DESKTOP LINKS */}
-          <nav aria-label="Main navigation" className="hidden items-center gap-7 lg:flex">
-            {navigation.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-sm font-semibold text-[#10243A] transition-colors hover:text-[#9B793E]"
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-
-          {/* DESKTOP ACTION */}
-          <a
-            href="#contact"
-            className="hidden rounded-md bg-[#10243A] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#223E59] lg:inline-flex"
-          >
-            Get in Touch
-          </a>
-
-          {/* MOBILE NAVIGATION */}
-          <details className="group lg:hidden">
-            <summary className="cursor-pointer list-none rounded-md border border-slate-200 px-4 py-2 text-sm font-semibold text-[#10243A]">
-              Menu
-            </summary>
-            <nav
-              aria-label="Mobile navigation"
-              className="absolute left-0 right-0 top-full flex flex-col gap-4 border-t border-slate-100 bg-white px-6 py-6 shadow-lg"
-            >
-              {navigation.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-sm font-semibold text-[#10243A]"
-                >
-                  {item.label}
-                </a>
-              ))}
-            </nav>
-          </details>
-        </div>
-      </header>
-
       {/* HERO */}
       <section
         id="home"
