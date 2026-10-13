@@ -107,7 +107,7 @@ export default function ServicesSection() {
             </div>
 
             <a
-              href="/#contact"
+              href="/contact"
               className="inline-flex w-fit shrink-0 items-center gap-3 rounded-md bg-[#C6A56B] px-7 py-4 text-sm font-bold text-[#10243A] transition-colors hover:bg-[#E0C38E]"
             >
               Contact Channel

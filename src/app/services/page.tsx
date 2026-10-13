@@ -130,7 +130,7 @@ export default function ServicesPage() {
           </p>
 
           <Link
-            href="/#contact"
+            href="/contact"
             className="mt-9 inline-flex items-center gap-3 rounded-md bg-[#C6A56B] px-7 py-4 text-sm font-bold text-[#10243A]"
           >
             Contact Channel

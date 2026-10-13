@@ -13,7 +13,7 @@ const navigation = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Careers", href: "/careers" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
